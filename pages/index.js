@@ -87,7 +87,7 @@ const IndexPage = () => {
       </div>
       {gameOver && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
-          <div className="bg-white p-12 rounded-lg w-1/5 sm:w-screen sm:h-screen shadow-lg text-center">
+          <div className="bg-white p-12 rounded-lg w-full sm:w-auto md:w-1/5 shadow-lg text-center">
             <h2 className="text-4xl font-bold mb-10">
               {gameResult === "Draw" ? "It's a draw!" : `${gameResult} wins!`}
             </h2>
